@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GOVERMENT Exam Resource</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+        }
+
+        header {
+            background-color: #2C3E50;
+      color: #fff;
+      padding: 5px;
+      padding-bottom: 1px;
+      text-align: center;
+
+        }
+        h1 {
+            color: #ffffff;
+            margin-top: 50px;
+        }
+        .box-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            margin: 40px;
+
+        }
+        .box {
+            background-color: #4CAF50;
+            padding: 20px;
+            border-radius: 10px;
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            box-shadow: 0px 5px 10px 0px
+            transition transform ease .5s, 
+        }
+        .box:hover {
+            background-color: #056b12e7;
+            box-shadow: 0px 10px 20px 2px rgba(0, 0, 0, 0.25);
+            transform: translateY(-2px);
+            
+        }
+        @media (max-width: 768px) {
+            .box-container {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        @media (max-width: 480px) {
+            .box-container {
+                grid-template-columns: 1fr;
+            }
+        }
+
+
+        .notebook-box {
+            width: 320px;
+            padding: 2px;
+            background: linear-gradient(135deg, #f7f4f4, #ffffff);
+            border-radius: 12px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: transform 0.4s ease, box-shadow 0.4s ease;
+            overflow: hidden;
+            position: relative;
+        
+            margin: auto;
+            
+
+            
+        }
+
+        .notebook-box::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 5px;
+            background-color: #34cfe4;
+            transform: scaleX(0);
+            transform-origin: right center;
+            transition: transform 0.4s ease;
+        }
+
+        .notebook-box:hover::before {
+            transform: scaleX(1);
+            transform-origin: left center;
+            
+        }
+
+        .notebook-box:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+        }
+
+        .notebook-box a {
+            text-decoration: none;
+            color: #fff;
+            background-color: #0e774d;
+            padding: 15px 25px;
+            font-size: 18px;
+            border-radius: 8px;
+            font-weight: 600;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            display: inline-block;
+        }
+
+        .notebook-box a:hover {
+            background-color: #0099cc;
+            transform: translateY(-5px);
+        }
+
+        .notebook-box a:active {
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body>
+    <header>   
+         <h1>GOVERNMENT EXAM RESOURCE</h1>
+
+         <p style="padding-bottom: 0; text-align: center; color: #fdfeff65;">In this website you can see the exam pattern , syllabus and download the notes.&nbsp;&nbsp;&nbsp;&nbsp;<a href="contact us.html" style="text-align: right; color: rgba(255, 255, 255, 0.418);">Contact us</a></p>
+
+    </header>
+
+
+    <div class="box-container">
+        <a href="delhi police constable.html" class="box">DELHI POLICE CONSTABLE </a>
+        <a href="haryana cet.html" class="box">HARYANA CET </a>
+        <a href="hr constable.html" class="box">HARYANA POLICE CONSTABLE</a>
+        <a href="RRB ntpc.html" class="box">RRB NTPC EXAM</a>
+        <a href="rpf constable.html" class="box">RPF CONSTABLE(RAILWAY POLICE)</a>
+        <a href="rrb group d.html" class="box">RRB GROUP D</a>
+        <a href="ssc cgl.html" class="box">SSC CGL</a>
+        <a href="ssc mts.html" class="box">SSC MTS</a>
+        <a href="ssc cpo.html" class="box">SSC CPO </a>
+
+    </div>
+
+
+    <div class="notebook-box">
+        <h2>Explore the Notes</h2>
+        <a href="all notes/all notes.html" target="_blank">Click Here</a>
+    </div>
+
+</body>
+</html>
