@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>History Notes</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            height: 100vh;
+        }
+
+        .sidebar {
+            background: #2c3e50;
+            color: #fff;
+            width: 250px;
+            padding-top: 20px;
+            position: fixed;
+            height: 100%;
+            box-shadow: 4px 0 10px rgba(0, 0, 0, 0.1);
+            animation: slideIn 1s ease-out;
+        }
+
+        .sidebar h2 {
+            text-align: center;
+            margin-bottom: 40px;
+            font-size: 2em;
+        }
+
+        .sidebar a {
+            display: block;
+            color: #ecf0f1;
+            padding: 15px;
+            text-decoration: none;
+            font-size: 1.2em;
+            margin: 10px 0;
+            border-radius: 5px;
+            transition: background 0.3s, transform 0.3s;
+        }
+
+        .sidebar a:hover {
+            background: #3498db;
+            transform: translateX(5px);
+        }
+
+        .content {
+            margin-left: 250px;
+            padding: 30px;
+            width: 100%;
+            background-color: #ecf0f1;
+            overflow-y: auto;
+            animation: fadeIn 2s ease-in;
+        }
+
+        .content h1 {
+            color: #295d92;
+            font-size: 3.5em;
+            margin-bottom: 20px;
+        }
+
+        .content h3 {
+            color: #7f8c8d;
+            font-size: 1.8em;
+            margin-bottom: 30px;
+        }
+
+        /* Animation effects */
+        @keyframes slideIn {
+            from {
+                transform: translateX(-250px);
+            }
+            to {
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <h2>History Notes</h2>
+        <a href="https://drive.google.com/file/d/1CohjaTR4Z2x9mNVe27DbrnjHaq6toad3/view?usp=drive_link">Ancient History in English</a>
+        <a href="https://drive.google.com/file/d/1CmUKlz35q6-q5dKRJUOk6Hhy5IVFKK27/view?usp=drive_link">Ancient History in Hindi</a>
+        <a href="https://drive.google.com/file/d/1Cl4rSEHm_MAASUR7LLhMZos8vNKipLSf/view?usp=drive_link ">Medieval & Modern History in English</a>
+        <a href="https://drive.google.com/file/d/1Ci9MDmjClbpjM8oJYLGNEQ5QzumhpfwN/view?usp=drive_link">Medieval & Modern History in Hindi</a>
+        <a href="https://drive.google.com/file/d/1CrGkOstA5T6xoGPek6stJI7DCIJ8s010/view?usp=drive_link">History by Khan sir</a>
+        <a href="https://drive.google.com/file/d/1Cs6kMY5rg3x5lhMfIcjkuYSZsrP-1gxN/view?usp=drive_link">History Khan sir notes</a>
+    </div>
+
+    <!-- Main Content -->
+    <div class="content">
+        <h1>History Notes</h1>
+        <h3>Explore the various history notes below:</h3>
+    </div>
+
+</body>
+</html>

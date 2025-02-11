@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>All Notes</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    header {
+      background-color: rgb(51, 49, 49);
+      /* margin-inline-start: 2%; */
+      padding: 5px;
+      /* margin-left: 0cap; */
+      /* margin-right: 20px; */
+      /* margin-left: 1px; */
+
+    }
+
+    body {
+      background-color: #f0f0f0;
+      display: flex;
+      justify-content: center;
+      
+      height: 100vh;
+      flex-direction: column;
+      /* margin-left: 20px; Makes space on the left side */
+    }
+
+    
+    h1 {
+      font-size: 36px;
+      color: #ffffff;
+      margin-bottom: 10px;
+      text-align: center;
+      
+      background-color: rgb(51, 49, 49);
+      
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+      max-height: 500px; /* Reduced height for the column */
+      overflow-y: auto; /* Allows scrolling if the content exceeds the max height */
+      animation: fadeInUp 1s ease-out;
+      align-items: center;
+    }
+
+    .box {
+      width: 250px;
+      height: 80px; /* Reduced height for each box */
+      background-color: #4CAF50;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 18px;
+      text-decoration: none;
+      border-radius: 8px;
+      box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s ease, background-color 0.3s ease;
+    }
+
+    .box:hover {
+      background-color: #349639;
+      transform: translateY(-10px);
+    }
+
+    .box:active {
+      transform: translateY(4px);
+    }
+
+    /* Animations */
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(50px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+  <h1>All Notes</h1>
+  <p style="color: #fffefe63;text-align: center;">In this website you easily download the all subject notes</p>
+  
+</header>
+
+  <div class="container">
+    <a href="history.html" class="box" target="_blank">History</a>
+    <a href="general science.html" class="box" target="_blank">General Science</a>
+    <a href="polity.html" class="box" target="_blank">Polity</a>
+    <a href="geography.html" class="box" target="_blank">Geography</a>
+    <a href="https://drive.google.com/file/d/1DaUde0vEM3ucBTO3aUs51dDmtTyUAzKX/view?usp=drive_link" class="box" target="_blank">Economics</a>
+    <a href="https://drive.google.com/file/d/1D2esv9l7AglMQ9K7A7uEPZ7MgojMYp5A/view?usp=drive_link" class="box" target="_blank">English</a>
+    <a href="https://drive.google.com/file/d/1Cuxk-aRXABkv7KMlURqPXdUy2HViyeCo/view?usp=drive_link" class="box" target="_blank">Haryana GK</a>
+    <a href="https://drive.google.com/file/d/1CypM58JrkDkJiOGXlcSAQt6kSwJN1Grj/view?usp=drive_link" class="box" target="_blank">Hindi</a>
+  </div>
+
+</body>
+</html>
