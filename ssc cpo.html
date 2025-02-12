@@ -14,7 +14,7 @@
             background-color: #f4f4f4;
         }
         header {
-            background-color: #94ad95;
+            background-color: #a5cfa6;
             color: rgb(250, 250, 250);
             padding: 20px 0;
             text-align: center;
@@ -25,11 +25,13 @@
         section {
             padding: 20px;
             
+            
         }
         table {
             width: 100%;
             border-collapse: collapse;
             margin-bottom: 20px;
+            
         }
         table, th, td {
             border: 1px solid #ddd;
@@ -41,6 +43,29 @@
         th {
             background-color: #afa381;
             color: white;
+        }
+
+        table{
+            overflow-x: auto;
+            white-space: nowrap;
+            display: block;
+            border: 0px;
+         
+        }
+       table::-webkit-scrollbar{
+            height: 8px;
+        }
+
+        table::-webkit-scrollbar-track{
+            background-color: #ddd;
+        }
+        table::-webkit-scrollbar-thumb{
+            background: #888;
+            border-radius: 4px;
+        }
+        table::-webkit-scrollbar-thumb-hover {
+            background: #141414;
+            
         }
         .container {
             max-width: 1200px;
@@ -62,8 +87,8 @@
             margin-bottom: 10px;
         }
         h1{
-            background-color: #94ad95;
-            color: white;
+            background-color: #a5cfa6;
+            color: rgb(53, 50, 50);
         }
         #header2 {
             background-color: #ddd;
