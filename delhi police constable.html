@@ -19,6 +19,7 @@
             border-collapse: collapse;
             margin: 20px;
         }
+
         th, td {
             padding: 12px;
             text-align: left;
@@ -26,6 +27,28 @@
         }
         th {
             background-color: #b5b8c5;
+        }
+
+        table{
+            overflow-x: auto;
+            white-space: nowrap;
+            display: block;
+         
+        }
+       table::-webkit-scrollbar{
+            height: 8px;
+        }
+
+        table::-webkit-scrollbar-track{
+            background-color: #ddd;
+        }
+        table::-webkit-scrollbar-thumb{
+            background: #888;
+            border-radius: 4px;
+        }
+        table::-webkit-scrollbar-thumb-hover {
+            background: #141414;
+            
         }
         
         header{
@@ -49,7 +72,7 @@
 
         footer {
             background-color: #333;
-            color: rgba(255, 255, 255, 0.39);
+            color: rgba(252, 245, 245, 0.959);
             text-align: center;
             padding: 1px 0;
             bottom: 0;
