@@ -18,6 +18,21 @@
             text-align: center;
             padding: 20px 0;
         }
+        #bounce {
+            /* background-color: #f0f0f0; */
+            overflow: auto;
+            margin: 0;
+            padding-bottom: 5px;
+        }
+        .moving-link {
+            position: absolute;
+            font-size: 20px;
+            font-weight: bold;
+            color: blue;
+            text-decoration: none;
+            white-space: nowrap;
+        }
+
         header h1 {
             margin: 0;
             font-size: 36px;
@@ -47,7 +62,8 @@
             margin-bottom: 20px;
         }
 
-       
+      
+        
         table {
             width: 100%;
             border-collapse: collapse;
@@ -89,6 +105,34 @@
     <h1>Haryana Police Constable Recruitment 2024</h1>
     <p>Official Information and Syllabus Overview</p>
 </header>
+<div id="bounce">
+    <a href="https://drive.google.com/file/d/1IrgmypZApy3VNCpFQqyeV7EIpDIxfvN3/view?usp=drive_link" class="moving-link" target="_blank">Download the official notification</a>
+
+    <script>
+        let link = document.querySelector('.moving-link');
+        let direction = 1;
+        let position = 0;
+        let speed = 2;
+        let maxWidth = window.innerWidth - link.offsetWidth;
+
+        function animate() {
+            position += speed * direction;
+            if (position >= maxWidth || position <= 0) {
+                direction *= -1;
+            }
+            link.style.left = position + 'px';
+            requestAnimationFrame(animate);
+        }
+
+        link.style.position = 'absolute';
+        link.style.left = '0px';
+        animate();
+
+        window.addEventListener('resize', () => {
+            maxWidth = window.innerWidth - link.offsetWidth;
+        });
+    </script>
+</div>
 
 <div class="container">
     <section class="section">
@@ -471,7 +515,7 @@
 
 
 <footer class="footer">
-    <p>HSSC<a href="https://www.hssc.gov.in" target="_blank">Official Website</a></p>
+    <p>HSSC <a href="https://www.hssc.gov.in" target="_blank">Official Website</a></p>
 </footer>
 
 </body>
