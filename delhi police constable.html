@@ -14,13 +14,53 @@
         }
 
         header{
+            width: 100%;
             
             background-color: rgb(62, 109, 68);
             color: white;
-            padding: 10px 0;
+            padding-top: 2px;
+            padding-bottom: 2px;
             text-align: center;
         
         }
+
+        nav {
+            background-color: #83caa7;
+            width: 100%;
+            margin: 0px;
+            padding: 10px 0;
+            
+            
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style-type: none;
+            padding-left: 15px;
+            padding-right: 15px;
+            size: 5px;
+             
+            
+            
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+       
+
        
         #bounce {
             /* background-color: #f0f0f0; */
@@ -116,6 +156,16 @@
     <h1 style="color: #f2f2f2;">Delhi Police Constable Exam Pattern</h1>
     </Header>
 
+    <nav>
+        <div class="container">
+            <ul>
+                 <li><a href="#pattern1">Exam Pattern</a></li>
+                <li><a href="#syllabus1">Syllabus</a></li>
+                <li><a href="#tips">Preparation tips</a></li>
+            </ul>
+        </div>
+    </nav>
+
     <div id="bounce">
         <a href="https://drive.google.com/file/d/10rOWXLEIrCPRrMhfqAyW77rO8IS1Mz01/view?usp=drive_link" class="moving-link" target="_blank">Download the official notification</a>
     
@@ -144,7 +194,7 @@
             });
         </script>
     </div>
-    <div class="table">
+    <div class="table" id="pattern1">
     <table>
         <thead>
             <tr>
@@ -190,7 +240,7 @@
 
 </div>
 
-    <h2>Delhi Police Constable Syllabus</h2>
+    <h2 id="syllabus1">Delhi Police Constable Syllabus</h2>
 
     <div class="table">
         
@@ -257,6 +307,15 @@
     </ul>
 
 </div>
+
+<section id="tips" class="container">
+    <h2>Preparation Tips</h2>
+    <ul>
+        <li>Understand the exam pattern and syllabus thoroughly.</li>
+        <li>Allocate time for each subject based on strengths and weaknesses.</li>
+        <li>Practice mock tests and previous years' papers.</li>
+    </ul>
+</section>
 
     
     <footer>
