@@ -10,15 +10,15 @@
             /* margin: 20px; */
             background-color: #ececf0;
             
-            /* padding-left: 20px; */
+            
             /* padding-right: 20px; */
             margin: 0;
+            
         }
        
         #bounce {
             /* background-color: #f0f0f0; */
             overflow: auto;
-            
             margin: 0;
             padding-bottom: 5px;
         }
@@ -53,9 +53,32 @@
             background-color: #006699;
             color: white;
         }
+
+        table{
+            overflow-x: auto;
+            white-space: nowrap;
+            display: block;
+            border: 0px;
+         
+        }
+       table::-webkit-scrollbar{
+            height: 8px;
+        }
+
+        table::-webkit-scrollbar-track{
+            background-color: #ddd;
+        }
+        table::-webkit-scrollbar-thumb{
+            background: #888;
+            border-radius: 4px;
+        }
+        table::-webkit-scrollbar-thumb-hover {
+            background: #141414;
+            
+        }
         
         header{
-            padding: 0px;
+            padding: 2px;
             background-color: rgb(62, 109, 68);
             text-align: center;
             margin: 0;
@@ -81,6 +104,10 @@
             bottom: 0;
             width: 100%;
         }
+
+        footer a{
+            color: #ddd;
+        }
        
     </style>
 </head>
@@ -90,7 +117,7 @@
     </Header>
 
     <div id="bounce">
-        <a href="https://drive.google.com/file/d/10rOWXLEIrCPRrMhfqAyW77rO8IS1Mz01/view?usp=drive_link" class="moving-link" target="_blank">Download official notification</a>
+        <a href="https://drive.google.com/file/d/10rOWXLEIrCPRrMhfqAyW77rO8IS1Mz01/view?usp=drive_link" class="moving-link" target="_blank">Click here to download the official notification</a>
     
         <script>
             let link = document.querySelector('.moving-link');
@@ -233,7 +260,7 @@
 
     
     <footer>
-        <p>2025 Delhi Police Constable</p>
+        <p>SSC Official Website : <a href="https://www.ssc.gov.in/">www.ssc.gov.in</a></p>
     </footer>
 
 </body>
