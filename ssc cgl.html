@@ -23,6 +23,22 @@
             text-align: center;
         }
 
+        #bounce {
+            /* background-color: #f0f0f0; */
+            overflow: auto;
+            margin: 0;
+            padding-bottom: 5px;
+        }
+        .moving-link {
+            position: absolute;
+            font-size: 20px;
+            font-weight: bold;
+            color: blue;
+            text-decoration: none;
+            white-space: nowrap;
+        }
+
+
         section {
             padding: 20px;
         }
@@ -126,6 +142,35 @@
         <p>Staff Selection Commission Combined Graduate Level Exam</p>
     </header>
 
+    <div id="bounce">
+        <a href="https://drive.google.com/file/d/1IUPftiUrkjYqTs5IqJoNfCTJ84RMmPWo/view?usp=drive_link" class="moving-link" target="_blank">Download the official notification</a>
+    
+        <script>
+            let link = document.querySelector('.moving-link');
+            let direction = 1;
+            let position = 0;
+            let speed = 2;
+            let maxWidth = window.innerWidth - link.offsetWidth;
+    
+            function animate() {
+                position += speed * direction;
+                if (position >= maxWidth || position <= 0) {
+                    direction *= -1;
+                }
+                link.style.left = position + 'px';
+                requestAnimationFrame(animate);
+            }
+    
+            link.style.position = 'absolute';
+            link.style.left = '0px';
+            animate();
+    
+            window.addEventListener('resize', () => {
+                maxWidth = window.innerWidth - link.offsetWidth;
+            });
+        </script>
+    </div>
+         
     <section>
         <h2>SSC CGL 2025 Exam Details</h2>
         <table>
