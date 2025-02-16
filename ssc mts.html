@@ -19,6 +19,22 @@
             text-align: center;
             padding: 20px 0;
         }
+
+        #bounce {
+            /* background-color: #f0f0f0; */
+            overflow: auto;
+            margin: 0;
+            padding-bottom: 5px;
+        }
+        .moving-link {
+            position: absolute;
+            font-size: 20px;
+            font-weight: bold;
+            color: blue;
+            text-decoration: none;
+            white-space: nowrap;
+        }
+
         section p{
             margin: 20px;
         }
@@ -115,6 +131,35 @@
     <h1>SSC MTS 2025 Exam Syllabus & Pattern</h1>
     <p>Official Website: <a href="https://www.ssc.gov.in" target="_blank" style="color:white;">www.ssc.gov.in</a></p>
 </header>
+<div id="bounce">
+    <a href="https://drive.google.com/file/d/1IbFeekAtkTup5j9Q39OnaIQDQw64NSIw/view?usp=drive_link" class="moving-link" target="_blank">Download the official notification</a>
+
+    <script>
+        let link = document.querySelector('.moving-link');
+        let direction = 1;
+        let position = 0;
+        let speed = 2;
+        let maxWidth = window.innerWidth - link.offsetWidth;
+
+        function animate() {
+            position += speed * direction;
+            if (position >= maxWidth || position <= 0) {
+                direction *= -1;
+            }
+            link.style.left = position + 'px';
+            requestAnimationFrame(animate);
+        }
+
+        link.style.position = 'absolute';
+        link.style.left = '0px';
+        animate();
+
+        window.addEventListener('resize', () => {
+            maxWidth = window.innerWidth - link.offsetWidth;
+        });
+    </script>
+</div>
+<p> </p>
 
 <section>
     <h2>Overview</h2>
